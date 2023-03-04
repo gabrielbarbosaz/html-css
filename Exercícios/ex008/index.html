@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport"
+        content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <title>Formatação de textos</title>
+
+        <style>
+            mark{
+                background-color: lime;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Principais formatações</h1>
+            <h2>Negrito / Destaque</h2>
+                <p>Aqui temos uma palavra em <b>Negrito</b>(FORMA)</p>
+                <p>Aqui temos um termo em destaque <strong>Destaque</strong> (SEMÃNTICA, SIGNIFICADO)</p>
+            <h2>Itálico / Ênfase</h2>
+                <p>Nesta frase temos um termo em <i>itálico</i> usando a tag I (não semântica)</p>
+                <p>Nesta frase temos um termo em <em>itálico</em> usando a tag EM (enfasis (semântica))</p>
+                <p>My family and I visited The Epcot center this summer. The weather was nice, and Epcot was amazing! I had a great summer together with my family!</p>
+            <h2>Texto marcado</h2>
+                <p>Podemos criar um texto <mark>marcado</mark> com a tag MARK</p>
+            <h2>Texto grande e pequeno</h2>
+            <p>Estamos criando um <big>texto grande</big> e <small>pequeno</small> nesse parágrafo</p>
+            <h2>Texto excluído</h2>
+            <p>Podemos marcar <del>um texto com excluído</del>, para indicar que ele deve ser lido mas não considerado</p>
+            <h2>Texto inserido</h2>
+            <p>Podemos marcar um <ins>texto como inserido</ins> para dar uma ênfase e indicar que ele foi adicionado depois</p>
+            <p>Temos também o <u>sublinhado</u> com a tag U (não semântica)</p>
+            <h2>Texto sobrescrito</h2>
+            <p>Para inserir coisas do tipo x<sup>20</sup>+3</p>
+            <h2>Texto subscrito</h2>
+            <p>Para inserir coisas do tipo H<sub>2</sub>O</p>
+
+            <form name = "form1">
+                Escolha um carro:
+                <input type= "checkbox" name = "carros" value = "Camaro"/> Camaro
+                <input type = "checkbox" name = "carros" value = "Ferrari"/> Ferrari
+                <input type = "checkbox" name = "carros" value = "Lamborguini"/> Lamborguini
+               <p></p>
+                    <div>
+                        Email <input type = "email" name = "email" value = "">
+                    </div>
+                <p></p>
+                Nome <input type = "text" name = "nome"> 
+                <p></p>
+                <input name = "arquivo" type = "file">
+            </form>
+
+
+            
+            <input list="browsers" name="browser" id="browser">
+            
+            <datalist id="browsers">
+              <option value="Edge">
+              <option value="Firefox">
+              <option value="Chrome">
+              <option value="Opera">
+              <option value="Safari">
+            </datalist>
+
+
+            <form>
+                <textarea name="texto" id="text" cols="30" rows="10"></textarea>
+            </form>
+
+            <br>
+            <form>
+                <input type="text" name = "nome" placeholder = "Digite seu nome" required = "required"> Nome (obrigatório)
+                <p></p>
+                <input type = "number" name = "idade" placeholder = "Digite sua idade"> Idade
+                <p></p>
+                <input type = "submit">
+                <p></p>
+            </form>
+
+            <button>Play</button>
+    </body>
